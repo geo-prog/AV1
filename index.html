@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Marketplace</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="container">
+		<header class="d-flex justify-content-center py-3">
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a href="#" class="nav-link active">Pedido</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+        <input type="search" id="search" class="form-control" style="max-width:100px" /><button type="button" class="btn btn-primary" onclick="busca()">Primary</button>
+			</ul>
+		</header>
+	</div>
+	<!--produto1-->
+	<div class="container py-3" id="Veja">
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-left align-items-center" >
+			<div class="col ">
+				<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQcAIclyDLojaiQr7-fSR6I-1-TRQ10oox0eCjeUD0O_fszHjhAwtIFR_2EpeE5yw-f98f_Dkwyca3WtoViRTMR6bwGAh6UW3G1plok4Eq3&usqp=CAE" class="img-thumbnail">
+      </div>
+      <div class="col">
+          <h3 class="mb-0">Veja</h3>
+          <h3 class="mb-0" id="prod1Prc">R$ 2.99</h3>
+      </div>
+      <div class="col ">
+        <h3 class="card-text mb-auto">Qnt:<input class="form-control" style="max-width:50px" type="number" id="prod1Qnt" name="prod1Qnt" min="0" max="10" value="0"></h3>
+      </div>
+    </div>
+    </div>
+  <!--produto2-->
+	<div class="container py-3" id="Mr Musculo">
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-left align-items-center" >
+			<div class="col ">
+				<img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQw0H4yAIdIyDrSz8my9GALfIEfQl6pLeWuapMBuDQ3R4z-9Kzxg3NbUo3C3RYgtH8Cr9RvXj65yIylAseEIkA6q-wpaL04zIVDlIhcPWTLcAIi57Mo8lX&usqp=CAE" class="img-thumbnail">
+      </div>
+      <div class="col">
+          <h3 class="mb-0">Mr Musculo</h3>
+          <h3 class="mb-0" id="prod2Prc">R$ 3.99</h3>
+      </div>
+      <div class="col">
+        <h3 class="card-text mb-auto">Qnt:<input class="form-control" style="max-width:50px" type="number" id="prod2Qnt" name="prod2Qnt" min="0" max="10" value="0"></h3>
+      </div>
+    </div>
+    </div>
+  <!--produto3-->
+	<div class="container py-3"id="Cif">
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-left align-items-center" >
+			<div class="col ">
+				<img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS1glJc6_8PBnCJ1JBWUs-tg7WYHmSN9BzT0sA_lHmYZwi8eKQo8M7UPxqR26iq1kCJH6LqZppi0nE73jejWiBPwCS2NOmfz2h8jdnlwkujAAMW5gDOANIFfg&usqp=CAE" class="img-thumbnail">
+      </div>
+      <div class="col">
+          <h3 class="mb-0">Cif</h3>
+          <h3 class="mb-0" id="prod3Prc">R$ 4.99</h3>
+      </div>
+      <div class="col">
+        <h3 class="card-text mb-auto">Qnt:<input class="form-control" style="max-width:50px"  type="number" id="prod3Qnt" name="prod3Qnt" min="0" max="10" value="0"></h3>
+      </div>
+    </div>
+    </div>
+  <!--produto4-->
+	<div class="container py-3" id="Casa & Perfume">
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-left align-items-center" >
+			<div class="col ">
+				<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcROnjzjRjBenLt6o2wyHhEKCD7dZLJTe-XrwlToGoT1lRAY8fmziZfFCeqEnU6IQPEXGU_9g6o3NPwzkfzyCfzIOqHahsevVJ23Aeu1w21gKN7X1tmwwnNT&usqp=CAE" class="img-thumbnail">
+      </div>
+      <div class="col">
+          <h3 class="mb-0">Casa & Perfume</h3>
+          <h3 class="mb-0" id="prod4Prc">R$ 3.30</h3>
+      </div>
+      <div class="col">
+        <h3 class="card-text mb-auto">Qnt:<input class="form-control" style="max-width:50px"  type="number" id="prod4Qnt" name="prod4Qnt" min="0" max="10" value="0"></h3>
+      </div>
+    </div>
+    </div>
+  <!--produto5-->
+	<div class="container py-3" id="Ajax Fresh Lemon">
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-left align-items-center" >
+			<div class="col ">
+				<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT33Us8yPO8D76AWcZmiLPngi4wW6GvFXLKiT-TlMARbaP1hDueIMZvmomCrKtzUJ0_9LFDLnetmvBrbiO2OpEp-lwW_zYqr4ulBhTFFWFWHb3VIAW2nsXJtHc&usqp=CAE" class="img-thumbnail">
+      </div>
+      <div class="col">
+          <h3 class="mb-0">Ajax Fresh Lemon</h3>
+          <h3 class="mb-0" id="prod5Prc">R$ 5.99</h3>
+      </div>
+      <div class="col">
+        <h3 class="card-text mb-auto">Qnt:<input class="form-control" style="max-width:50px"  type="number" id="prod5Qnt" name="prod5Qnt" min="0" max="10" value="0"></h3>
+      </div>
+    </div>
+  </div>
+  <!--botoes-->
+  <div class="container">
+		<header class="d-flex justify-content-center py-3">
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a onclick="produtos()" class="btn btn-success">Confirmar</a></li>
+				<li class="nav-item"><a href="../index.html" class="btn btn-danger">Cancelar</a></li>
+			</ul>
+		</header>
+	</div>
+  <!--footer-->
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);"> © 2021 Copyright: <a class="text-dark" href="#!">Geovani</a>
+    </div>
+  </footer>
+</body>
+</html>
